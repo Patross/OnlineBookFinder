@@ -1,11 +1,13 @@
 <?php
+include_once "db.inc.php";
+
 
 if(isset($_POST['submit'])){
     $firstName = htmlentities(mysql_real_escape_string($_POST[]));
     $lastName = htmlentities(mysql_real_escape_string($_POST[]));
     $username = htmlentities(mysql_real_escape_string($_POST[]));
     $email = htmlentities(mysql_real_escape_string($_POST[]));
-    $password =htmlentities( mysql_real_escape_string($_POST[]));
+    $password = htmlentities( mysql_real_escape_string($_POST[]));
     $confirmPassword = htmlentities(mysql_real_escape_string($_POST[]));
 
 
@@ -24,7 +26,10 @@ if(isset($_POST['submit'])){
                   header("Location: ../index.php?signup=number");
               }
               else{
-                  $query = mysqli_query()
+
+                  //HASH PASSWORD
+                  $passwordHashed = password_hash($password,PASSWORD_DEFAULT)
+                  $query = mysqli_query($conn,"INSERT INTO users(firstname,lastname,username,email,password) VALUES('$firstName','$lastName','$username','$email','$passwordHashed');");
               }
           }
           else{
