@@ -1,0 +1,15 @@
+body{
+    color: palegoldenrod;
+}
+
+#header{
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    border-style: solid;
+    padding: 10;
+    width: 80vmax;
+    font-size: 5vmax;
+    color: black;
+    margin: 0 auto;
+}
