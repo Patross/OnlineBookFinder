@@ -2,6 +2,6 @@
 $dbHostname = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "OnlineBookFinder";
+$dbName = "onlinebookfinder";
 
 $conn = mysqli_connect($dbHostname,$dbUsername,$dbPassword,$dbName);
