@@ -1,15 +1,19 @@
 body{
-    color: palegoldenrod;
+    background-color: #99ffcc;
+    color: black;
 }
 
 #header{
     display: block;
     text-align: center;
-    font-family: sans-serif;
-    border-style: solid;
+    font-family: fantasy;
     padding: 10;
     width: 80vmax;
     font-size: 5vmax;
     color: black;
     margin: 0 auto;
+}
+
+#navbar{
+    
 }
