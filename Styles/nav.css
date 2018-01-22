@@ -13,7 +13,7 @@ body{
     border-right: 2px solid red;
 }
 #logo img{
-  width: 3vmax;
+  width: 10vmax;
   height: 3vmax;
   float:left;
   transform: translate(0.5vmax,0.5vmax);
