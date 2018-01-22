@@ -1,7 +1,9 @@
 *{
-    background-color: #aaa; 
     margin: 0;
     padding:0;
+}
+body{
+    background-color: #aaa;
 }
 #main-wrapper{
     width: 100vmax;
@@ -10,16 +12,39 @@
     border-left: 2px solid red;
     border-right: 2px solid red;
 }
+#logo img{
+  width: 3vmax;
+  height: 3vmax;
+  float:left;
+  transform: translate(0.5vmax,0.5vmax);
+}
+#logo img:hover{
+  cursor: pointer;
+}
 #main-navigation > ul{
-    list-style-type: none;;
-    background: #fff;
+  list-style-type: none;
+  background: #fff;
 }
 #main-navigation > ul > li{
     display: inline-block;
     padding: 0.5vmax;
-    margin: 0.5vmax 0;
+    margin: 1vmax auto;
+}
+#main-navigation > ul > li > a{
+    text-decoration:none;
+    color: black;
+    padding:0.8vmax;
     background: rgba(0,0,0,0.2);
+        border-radius: 0.5vmax;
+}
+#main-navigation > ul > li > a:hover{
+    color:white;
+    background: rgba(0,0,0,0.7);
 }
 #main-navigation > ul > li:last-child{
+    margin-right: 2vmax;
+}
+
+form{
 
 }
