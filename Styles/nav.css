@@ -1,6 +1,8 @@
 *{
+    font-size: 1.6vmax;
     margin: 0;
     padding:0;
+    font-family: 'Noto Sans', sans-serif;
 }
 body{
     background-color: #aaa;
@@ -8,9 +10,6 @@ body{
 #main-wrapper{
     width: 100vmax;
     text-align: right;
-    border-bottom: 2px solid red;
-    border-left: 2px solid red;
-    border-right: 2px solid red;
 }
 #logo img{
   width: 3vmax;
@@ -34,17 +33,35 @@ body{
     text-decoration:none;
     color: black;
     padding:0.8vmax;
-    background: rgba(0,0,0,0.2);
-        border-radius: 0.5vmax;
+    border-radius: 1vmax;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0.3vmax;
+}
+
+#loginbtb{
+    background-color: white;
+    border-style: solid;
+    border-radius: 1vmax;
+    padding: 0.8vmax;
+    color: black;
+    border-color: lightgray;
+        border-width: 0.3vmax;
+}
+
+#loginbtb:hover{
+    background-color: black;
+    color: white;
+    border-color:transparent;
 }
 #main-navigation > ul > li > a:hover{
     color:white;
-    background: rgba(0,0,0,0.7);
+    background: black;
+    border-color: transparent;
 }
 #main-navigation > ul > li:last-child{
     margin-right: 2vmax;
 }
-
-form{
-
+#main-navigation  form  button{
+    margin-right:4vmax;
 }
