@@ -18,3 +18,11 @@ CREATE TABLE users(
     email varchar(256) NOT NULL,
     password varchar(256) NOT NULL
     );
+
+    CREATE TABLE books (
+    id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title varchar(256) NOT NULL,
+    author varchar(256) NOT NULL,
+    addedby varchar(256) NOT NULL,
+    price int(11) NOT NULL
+    );
