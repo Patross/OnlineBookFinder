@@ -1,7 +1,13 @@
 <?php
-$dbHostname = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
+if(isset($_SESSION["lastpage"])){
+    header("Location: ".$_SESSION["lastpage"]);
+}
+else{
+    header("location: ../index.php");
+}
+$dbHostname = "onlinebookfinder.database.windows.net";
+$dbUsername = "onlinebookfinder";
+$dbPassword = "Password12345";
 $dbName = "onlinebookfinder";
 
 $conn = mysqli_connect($dbHostname,$dbUsername,$dbPassword,$dbName);
