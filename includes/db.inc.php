@@ -5,7 +5,7 @@ if(isset($_SESSION["lastpage"])){
 else{
     header("location: ../index.php");
 }
-$dbHostname = "onlinebookfinder.database.windows.net";
+$dbHostname = "patross.azurewebsites.net";
 $dbUsername = "onlinebookfinder";
 $dbPassword = "Password1233";
 $dbName = "onlinebookfinder";
