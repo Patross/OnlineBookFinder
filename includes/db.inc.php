@@ -7,7 +7,7 @@ else{
 }
 $dbHostname = "onlinebookfinder.database.windows.net";
 $dbUsername = "onlinebookfinder";
-$dbPassword = "Password12345";
+$dbPassword = "Password1233";
 $dbName = "onlinebookfinder";
 
 $conn = mysqli_connect($dbHostname,$dbUsername,$dbPassword,$dbName);
