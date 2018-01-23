@@ -5,7 +5,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 body{
-    background-color: #aaa;
+    background-color: deepskyblue;
 }
 #main-wrapper{
     width: 100vmax;
@@ -46,13 +46,26 @@ body{
     padding: 0.8vmax;
     color: black;
     border-color: lightgray;
-        border-width: 0.3vmax;
+    border-width: 0.3vmax;
 }
 
 #loginbtb:hover{
     background-color: black;
     color: white;
     border-color:transparent;
+}
+
+.login-input{
+    border-width: 0.3vmax;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 0.6vmax;
+    padding: 0.8vmax;
+    
+}
+
+.login-input::placeholder{
+    padding-left: 0.2vmax;
 }
 #main-navigation > ul > li > a:hover{
     color:white;
@@ -64,4 +77,17 @@ body{
 }
 #main-navigation  form  button{
     margin-right:4vmax;
+}
+
+#book-shopping-title{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2vmax;
+    width: 40vmax;
+    padding: 2vmax;
+    border-radius: 1vmax;
+    color: deepskyblue;
+    font-size: 4vmax;
 }
