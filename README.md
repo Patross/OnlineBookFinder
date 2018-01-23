@@ -24,5 +24,5 @@ CREATE TABLE users(
     title varchar(256) NOT NULL,
     author varchar(256) NOT NULL,
     addedby varchar(256) NOT NULL,
-    price int(11) NOT NULL
+    price decimal(15,2) NOT NULL
     );

@@ -17,6 +17,7 @@ if (empty($firstname || empty($lastname) || empty($username) || empty($email) ||
         //Everything filled out.
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
           //Email is valid too.
+          $email = strtolower($email);
           if ($password == $confirmPassword) {
               //Passwords Match.
 

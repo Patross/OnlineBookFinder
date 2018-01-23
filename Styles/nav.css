@@ -15,7 +15,7 @@ body{
   width: 10vmax;
   height: 3vmax;
   float:left;
-  transform: translate(0.5vmax,0.5vmax);
+  transform: translateY(2vmax);
 }
 #logo img:hover{
   cursor: pointer;
