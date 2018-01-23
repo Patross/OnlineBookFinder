@@ -78,3 +78,16 @@ body{
 #main-navigation  form  button{
     margin-right:4vmax;
 }
+
+#book-shopping-title{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2vmax;
+    width: 40vmax;
+    padding: 2vmax;
+    border-radius: 1vmax;
+    color: deepskyblue;
+    font-size: 4vmax;
+}
