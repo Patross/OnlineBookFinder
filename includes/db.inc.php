@@ -10,4 +10,4 @@ $dbUsername = "onlinebookfinder";
 $dbPassword = "Password1233";
 $dbName = "onlinebookfinder";
 
-$conn = mysqli_connect($dbHostname,$dbUsername,$dbPassword,$dbName);
+$conn = mysqli_connect(gethostname(),$dbUsername,$dbPassword,$dbName);
