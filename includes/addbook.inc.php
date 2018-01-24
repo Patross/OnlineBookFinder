@@ -1,5 +1,5 @@
  <?php
-include_once "header.php";
+include_once "db.inc.php";
 if(isset($_SESSION["u_id"])){
     if(isset($_GET["submit"])){
         if(!empty($_GET["title"]) && !empty($_GET["author"]) && !empty($_GET["price"])){

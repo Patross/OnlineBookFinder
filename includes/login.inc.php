@@ -5,8 +5,8 @@ if(!isset($_POST['submit'])){
 	header("Location: ../index.php");
 }
 else{
-    $username = htmlentities(mysqli_real_escape_string($conn,$_POST['username']));
-    $password = htmlentities( mysqli_real_escape_string($conn,$_POST['password']));
+    $username = htmlentities($_POST['username']);
+    $password = htmlentities($_POST['password']);
 
     $query = $conn->query("SELECT * FROM users WHERE username='$username' OR email='$username'");
     $result = $conn->fetch($query);
