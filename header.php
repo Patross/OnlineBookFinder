@@ -1,7 +1,5 @@
      <?php
         session_start();
-        if(basename($_SERVER["PHP_SELF"]) == "header.php"){
-            header("Location: index.php");
-        }
+              include_once "includes/db.inc.php";
         $_SESSION['lastpage'] = $_SERVER["HTTP_HOST"].$_SERVER['PHP_SELF'];
     ?>
