@@ -10,7 +10,7 @@ if(isset($_SESSION["u_id"])){
             $author = $_GET["author"];
             $price = $_GET["price"];
             $addedby = $_SESSION["u_id"];
-            mysqli_query($conn,"INSERT INTO books(title,author,addedby,price) VALUES('$title','$author','$addedby','$price');");
+            $conn->query("INSERT INTO books(title,author,addedby,price) VALUES('$title','$author','$addedby','$price');");
         }
     }
 }

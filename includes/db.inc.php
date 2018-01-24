@@ -1,10 +1,10 @@
 <?php
-// if(isset($_SESSION["lastpage"])){
-//     header("Location: ".$_SESSION["lastpage"]);
-// }
-// else{
-//     header("location: ../index.php");
-// }
+if(isset($_SESSION["lastpage"])){
+    header("Location: ".$_SESSION["lastpage"]);
+}
+else{
+    header("location: ../index.php");
+}
 // $dbHostname = "onlinebookfinder.mysql.database.windows.net";
 // $dbUsername = "onlinebookfinder";
 // $dbPassword = "Password1233";

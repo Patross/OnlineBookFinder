@@ -2,12 +2,12 @@
 include_once "db.inc.php";
 
 if(isset($_POST['submit'])){
-    $firstname = htmlentities(mysqli_real_escape_string($conn,$_POST['firstname']));
-    $lastname = htmlentities(mysqli_real_escape_string($conn,$_POST['lastname']));
-    $username = htmlentities(mysqli_real_escape_string($conn,$_POST['username']));
-    $email = htmlentities(mysqli_real_escape_string($conn,$_POST['email']));
-    $password = htmlentities( mysqli_real_escape_string($conn,$_POST['password']));
-    $confirmPassword = htmlentities(mysqli_real_escape_string($conn,$_POST['confirmPassword']));
+    $firstname = htmlentities($conn,$_POST['firstname']);
+    $lastname = htmlentities($conn,$_POST['lastname']);
+    $username = htmlentities($conn,$_POST['username']);
+    $email = htmlentities($conn,$_POST['email']);
+    $password = htmlentities($conn,$_POST['password']);
+    $confirmPassword = htmlentities($conn,$_POST['confirmPassword']);
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 if (empty($firstname || empty($lastname) || empty($username) || empty($email) || empty($password) || empty($confirmPassword))) {
@@ -28,7 +28,7 @@ if (empty($firstname || empty($lastname) || empty($username) || empty($email) ||
 
                   //HASH PASSWORD
                   $passwordHashed = password_hash($password,PASSWORD_DEFAULT);
-                  $query = mysqli_query($conn,"INSERT INTO users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
+                  $query = $conn->query("INSERT INTO users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
 						header("Location: ../register.php?signup=success");
               }
           }

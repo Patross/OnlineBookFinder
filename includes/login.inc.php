@@ -8,8 +8,8 @@ else{
     $username = htmlentities(mysqli_real_escape_string($conn,$_POST['username']));
     $password = htmlentities( mysqli_real_escape_string($conn,$_POST['password']));
 
-    $query = mysqli_query($conn,"SELECT * FROM users WHERE username='$username' OR email='$username'");
-    $result = mysqli_fetch_assoc($query);
+    $query = $conn->query("SELECT * FROM users WHERE username='$username' OR email='$username'");
+    $result = $conn->fetch($query);
 
     if (password_verify($password,$result['password'])) {
         $_SESSION['u_id'] = $result['id'];
