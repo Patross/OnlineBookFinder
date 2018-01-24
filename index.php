@@ -1,5 +1,6 @@
 <?php
 include_once "header.php";
+include_once "includes/db.inc.php";
 ?>
  <html>
     <head>
