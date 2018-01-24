@@ -14,6 +14,9 @@ include_once "header.php";
         if (isset($_SESSION['u_name'])){
             echo "<b><span style=color:black>logged in as ".$_SESSION['u_name']."</span></b>";
             }
+            echo gethostbyaddr();
+            echo "\n";
+            echo gethostname();
         ?>
 <?php
 
