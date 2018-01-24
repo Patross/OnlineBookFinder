@@ -2,12 +2,12 @@
 include_once "db.inc.php";
 
 if(isset($_POST['submit'])){
-    $firstname = htmlentities($conn,$_POST['firstname']);
-    $lastname = htmlentities($conn,$_POST['lastname']);
-    $username = htmlentities($conn,$_POST['username']);
-    $email = htmlentities($conn,$_POST['email']);
-    $password = htmlentities($conn,$_POST['password']);
-    $confirmPassword = htmlentities($conn,$_POST['confirmPassword']);
+    $firstname = htmlentities($_POST['firstname']);
+    $lastname = htmlentities($_POST['lastname']);
+    $username = htmlentities($_POST['username']);
+    $email = htmlentities($_POST['email']);
+    $password = htmlentities($_POST['password']);
+    $confirmPassword = htmlentities($_POST['confirmPassword']);
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 if (empty($firstname || empty($lastname) || empty($username) || empty($email) || empty($password) || empty($confirmPassword))) {
