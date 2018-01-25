@@ -8,9 +8,12 @@ else{
     $username = htmlentities($_POST['username']);
     $password = htmlentities($_POST['password']);
 
-    $query = $conn->query("SELECT * FROM users WHERE username='$username' OR email='$username'");
-    $result = $conn->fetch($query);
-    if($conn->rowCount() < 1){
+    // $query = $conn->query("SELECT * FROM onlinebookfinder.users WHERE username='$username' OR email='$username';");
+    $data = $conn->prepare("SELECT * FROM onlinebookfinder.users WHERE username='$username' OR email='$username';");
+    $data->execute();
+
+    $result = $data->fetch(PDO::FETCH_ASSOC);
+    if($count = $data->rowCount() == 1){
         if (password_verify($password,$result['password'])) {
             $_SESSION['u_id'] = $result['id'];
             $_SESSION['u_name'] = $result['username'];

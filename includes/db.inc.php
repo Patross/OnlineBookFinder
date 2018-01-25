@@ -13,7 +13,8 @@
 // $conn = mysqli_connect(gethostname(),$dbUsername,$dbPassword,$dbName);
 
 try {
-    $conn = new PDO("sqlsrv:server = tcp:onlinebookfinder.database.windows.net,1433; Database = onlinebookfinder", "onlinebookfinder", "{Password1233}");
+    // $conn = new PDO("sqlsrv:server = tcp:onlinebookfinder.database.windows.net,1433; Database = onlinebookfinder", "onlinebookfinder", "{Password1233}");
+    $conn = new PDO("mysql:server = localhost; Database = onlinebookfinder", "root", "",array(PDO::MYSQL_ATTR_FOUND_ROWS => true));
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
