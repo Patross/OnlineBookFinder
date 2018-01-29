@@ -28,8 +28,8 @@ if (empty($firstname || empty($lastname) || empty($username) || empty($email) ||
 
                   //HASH PASSWORD
                   $passwordHashed = password_hash($password,PASSWORD_DEFAULT);
-                  $data = $conn->prepare("INSERT INTO onlinebookfinder.users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
-                  $data->execute();
+                  $query = $conn->prepare("INSERT INTO onlinebookfinder.users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
+                  $query->execute();
                 //   $query = $conn->query("INSERT INTO onlinebookfinder.users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
 						header("Location: ../register.php?signup=success");
               }
