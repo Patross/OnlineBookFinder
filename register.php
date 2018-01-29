@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 if (empty($firstname || empty($lastname) || empty($username) || empty($email) || empty($password) || empty($confirmPassword))) {
-        header("Location: ../register.php?signup=empty");
+        header("Location: register.php?signup=empty");
     }
     else {
         //Everything filled out.
@@ -23,7 +23,7 @@ if (empty($firstname || empty($lastname) || empty($username) || empty($email) ||
               //Passwords Match.
 
               if(1 === preg_match('~[0-9]~', $firstname) || 1===preg_match('~[0-9]~',$lastname)){
-                  header("Location: ../register.php?signup=invalidchar");
+                  header("Location: register.php?signup=invalidchar");
               }
               else{
 
@@ -32,21 +32,21 @@ if (empty($firstname || empty($lastname) || empty($username) || empty($email) ||
                   $query = $conn->prepare("INSERT INTO onlinebookfinder.users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
                   $query->execute();
                 //   $query = $conn->query("INSERT INTO onlinebookfinder.users(firstname,lastname,username,email,password) VALUES('$firstname','$lastname','$username','$email','$passwordHashed');");
-						header("Location: ../register.php?signup=success");
+						header("Location: register.php?signup=success");
               }
           }
           else{
-              header("Location: ../register.php?signup=password");
+              header("Location: register.php?signup=password");
           }
 
         }
         else{
-            header("Location: ../register.php?signup=email");
+            header("Location: register.php?signup=email");
         }
     }
 }
 else{
-    header("Location: ../register.php");
+    header("Location: register.php");
 }
 ?>
 <?php
@@ -58,7 +58,7 @@ include_once "header.php";
 </head>
 <body>
 	<div>
-	<form action="includes/signup.inc.php" method="post">
+	<form action="includes/register.php" method="post">
 	
 		<input type="text" name="username"  placeholder="username"></br></br>
 		  <input type="text" name="firstname" placeholder="first name"></br></br>
