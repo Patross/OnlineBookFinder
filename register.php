@@ -46,7 +46,7 @@ if (empty($firstname || empty($lastname) || empty($username) || empty($email) ||
     }
 }
 else{
-    header("Location: register.php");
+    // header("Location: register.php");
 }
 ?>
 <?php
