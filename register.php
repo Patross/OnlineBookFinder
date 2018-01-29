@@ -58,7 +58,7 @@ include_once "header.php";
 </head>
 <body>
 	<div>
-	<form action="includes/register.php" method="post">
+	<form action="register.php" method="post">
 	
 		<input type="text" name="username"  placeholder="username"></br></br>
 		  <input type="text" name="firstname" placeholder="first name"></br></br>
