@@ -1,16 +1,13 @@
-
 <?php
 if(isset($_POST['submit']))
 {
   session_start();
+  $page = basename($_SESSION["lastpage"]);
   session_unset();
   session_destroy();
-  header("Location: ".$_SERVER['PHP_SELF']);
+  header('Location: ../'.$page);
 }
-echo
-'
-    <form action='.$_SERVER["PHP_SELF"].' method="post">
-    <button type="submit" name="submit">Logout</button>
-    </form>
-';
+else{
+  header("Location ../index.php");
+}
 ?>

@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
 <?php
 include_once "header.php";
 ?>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<title>Online Bookfinder - Register</title>
