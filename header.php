@@ -33,47 +33,44 @@
                             ?>
                         </li>
                         <li>
-                            <?php
-                            if(!isset($_SESSION["u_name"]))
-                            {
-                                echo '
-                                <form action="includes/login.inc.php" method="POST">
-                                    <input class="login-input" type="text" name="username" placeholder="Username">
-                                    <input class="login-input" type="password" name="password" placeholder="Password">
-                                    <button type="submit" name="submit" id="loginbtb">Login</button>
-                                </form>
-                                    ';
-                            }
-                            else
-                            {
-                                echo'
-                                <form action="includes/logout.inc.php" method="post">
-                                    <button type="submit" name="submit" id="loginbtb">Logout</button>
-                                </form>
-                                ';
-                            }
-                            ?>
-                        </li>
                         <?php
-                        if(isset($_SESSION["u_name"])){
-                            //links available to normal users except registration, since at this point they're logged in
-                            echo '<li><a href="index.php">Home</a></li>';
-
-                                if(($_SESSION["u_name"] == "Admin")){
-                                    //normal + admin only links
-                                    echo '<li><a href="admin.php">Admin</a></li>';
-                            }
+                        if(!isset($_SESSION["u_name"]))
+                        {
+                            echo '
+                            <form action="includes/login.inc.php" method="POST">
+                                <input class="login-input" type="text" name="username" placeholder="Username">
+                                <input class="login-input" type="password" name="password" placeholder="Password">
+                                <button type="submit" name="submit" id="loginbtb">Login</button>
+                            </form>
+                                ';
                         }
-                        else{
-                            //every link except admin
-                            echo '<li><a href="index.php">Home</a></li>
-                                  <li><a href="register.php">Register</a></li>
-                                  ';
+                        else
+                        {
+                            echo'
+                            <form action="includes/logout.inc.php" method="post">
+                                <button type="submit" name="submit" id="loginbtb">Logout</button>
+                            </form>
+                            ';
                         }
                         ?>
-                        <!-- <li><a href="index.php">Home</a></li>
-                        <li><a href="register.php">Register</a></li>
-                        <li><a href="admin.php">Admin</a></li> -->
+                    </li>
+                    <?php
+                    if(isset($_SESSION["u_name"])){
+                        //links available to normal users except registration, since at this point they're logged in
+                        echo '<li><a href="index.php">Home</a></li>';
+
+                            if(($_SESSION["u_name"] == "Admin")){
+                                //normal + admin only links
+                                echo '<li><a href="admin.php">Admin</a></li>';
+                        }
+                    }
+                    else{
+                        //every link except admin
+                        echo '<li><a href="index.php">Home</a></li>
+                              <li><a href="register.php">Register</a></li>
+                              ';
+                    }
+                    ?>
                     </ul>
                 </div>
             </nav>

@@ -8,8 +8,8 @@ else{
     $username = htmlentities($_POST['username']);
     $password = htmlentities($_POST['password']);
 
-    // $query = $conn->query("SELECT * FROM onlinebookfinder.users WHERE username='$username' OR email='$username';");
-    $query = $conn->query("SELECT * FROM id4484729_onlinebookfinder.users WHERE username='$username' OR email='$username';");
+     $query = $conn->query("SELECT * FROM onlinebookfinder.users WHERE username='$username' OR email='$username';");
+   // $query = $conn->query("SELECT * FROM id4484729_onlinebookfinder.users WHERE username='$username' OR email='$username';");
 
     $result = $query->fetch(PDO::FETCH_ASSOC);
     if($count = $query->rowCount() == 1){
@@ -26,6 +26,6 @@ else{
         }
     }
     else{
-        header('Location: ../'.basename($_SESSION["lastpage"]).'?login?nomatch');
+        header('Location: ../'.basename($_SESSION["lastpage"]).'?login=nomatch');
     }
 }
