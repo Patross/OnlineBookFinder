@@ -1,50 +1,88 @@
-*{
-    margin: 0;
-    padding:0;
-}
-body{
-    background-color: #aaa;
-}
 #main-wrapper{
     width: 100vmax;
     text-align: right;
-    border-bottom: 2px solid red;
-    border-left: 2px solid red;
-    border-right: 2px solid red;
 }
 #logo img{
   width: 10vmax;
   height: 3vmax;
   float:left;
-  transform: translate(0.5vmax,0.5vmax);
+  transform: translateY(0.5vmax);
 }
 #logo img:hover{
   cursor: pointer;
 }
+#main-navigation{
+  background: #fff;
+  height:3.8vmax;
+}
 #main-navigation > ul{
   list-style-type: none;
-  background: #fff;
 }
 #main-navigation > ul > li{
     display: inline-block;
-    padding: 0.5vmax;
-    margin: 1vmax auto;
+    padding: 0vmax;
+    margin: 0vmax auto;
+    line-height: 3.8vmax;
 }
 #main-navigation > ul > li > a{
     text-decoration:none;
     color: black;
-    padding:0.8vmax;
-    background: rgba(0,0,0,0.2);
-        border-radius: 0.5vmax;
+    padding:0.5vmax;
+    border-radius: 1vmax;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0.3vmax;
+}
+
+#loginbtb{
+    background-color: white;
+    border-style: solid;
+    border-radius: 1vmax;
+    padding: 0.5vmax;
+    color: black;
+    border-color: lightgray;
+    border-width: 0.3vmax;
+}
+
+#loginbtb:hover{
+    background-color: black;
+    color: white;
+    border-color:transparent;
+}
+
+.login-input{
+    border-width: 0.3vmax;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 0.6vmax;
+    padding: 0.5vmax;
+    
+}
+
+.login-input::placeholder{
+    padding-left: 0.2vmax;
 }
 #main-navigation > ul > li > a:hover{
     color:white;
-    background: rgba(0,0,0,0.7);
+    background: black;
+    border-color: transparent;
 }
 #main-navigation > ul > li:last-child{
     margin-right: 2vmax;
 }
+#main-navigation  form  button{
+    margin-right:4vmax;
+}
 
-form{
-
+#book-shopping-title{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2vmax;
+    width: 40vmax;
+    padding: 2vmax;
+    border-radius: 1vmax;
+    color: deepskyblue;
+    font-size: 4vmax;
 }
