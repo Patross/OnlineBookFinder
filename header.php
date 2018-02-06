@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Online Book Finder</title>
-        <link rel="icon" href="img/LogoV2.ico">
+        <link rel="icon" href="img/LogoV3.png">
         <link rel="stylesheet" href="Styles/nav.css">
         <link rel="stylesheet" href="Styles/styles.css">
         <link rel="stylesheet" href="Styles/footer.css">
@@ -26,7 +26,7 @@
                 <div id="main-navigation">
                     <ul>
                       	<li id="logo">
-                          <img src="img/LogoV2.svg" alt="Book finder logo">
+                          <img src="img/LogoV3.png" alt="Book finder logo">
                         </li>
                         <li>
                             <?php
