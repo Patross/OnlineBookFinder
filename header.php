@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="Styles/nav.css">
         <link rel="stylesheet" href="Styles/styles.css">
         <link rel="stylesheet" href="Styles/footer.css">
+        <link rel="stylesheet" href="Styles/register.css">
 
         <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
