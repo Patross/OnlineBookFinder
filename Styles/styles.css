@@ -1,9 +1,24 @@
 *{
-    font-size: 1vmax;
+    font-size: 1vw;
     margin: 0;
     padding:0;
     font-family: 'Noto Sans', sans-serif;
 }
 body{
     background-color: deepskyblue;
+}
+#book-shopping-title{
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2vw;
+    width: 30vw;
+    padding: 2vw;
+    border-radius: 1vw;
+    color: deepskyblue;
+    font-size: 3vw;
+}
+form#register{
+margin: 0 auto;
 }

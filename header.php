@@ -13,18 +13,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Online Book Finder</title>
+        <link rel="icon" href="img/LogoV2.ico">
         <link rel="stylesheet" href="Styles/nav.css">
         <link rel="stylesheet" href="Styles/styles.css">
         <link rel="stylesheet" href="Styles/footer.css">
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
         <header>
             <nav id="main-wrapper">
                 <div id="main-navigation">
                     <ul>
-                      	<div id="logo">
-                          <a href="index.php"><img src="img/LogoV2.png"></a>
-                        </div>
+                      	<li id="logo">
+                          <img src="img/LogoV2.svg" alt="Book finder logo">
+                        </li>
                         <li>
                             <?php
                             if (isset($_SESSION['u_name'])){

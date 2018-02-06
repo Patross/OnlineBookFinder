@@ -1,8 +1,28 @@
 #footer{
 	width :100%;
-	background-color: CCCCCC;
-    
+	background-color: #000;
+	position: fixed;
+	bottom:0;
+	text-align: center;
+}
+#footer p{
+	float:left;
+	margin-left: 50vw;
 }
 h1{
-	font-size: 1.5vw;
+	font-size: 1em;
+	color: #fff;
+}
+div#subscribeform{
+	margin-top: 1vw;
+}
+div#subscribeform form input[type="email"]{
+width: 15vw;
+}
+div#subscribeform form input::placeholder{
+	font-size: 1vw;
+	color:black;
+}
+div#subscribeform form input:focus::placeholder{
+	color: deepskyblue;
 }

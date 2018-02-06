@@ -1,47 +1,51 @@
 #main-wrapper{
-    width: 100vmax;
+    width: 100vw;
     text-align: right;
 }
 #logo img{
-  width: 10vmax;
-  height: 3vmax;
+  width: 10vw;
+  height: 3vw;
   float:left;
-  transform: translateY(0.5vmax);
+  transform: translateY(0.5vw);
 }
 #logo img:hover{
   cursor: pointer;
 }
 #main-navigation{
   background: #fff;
-  height:3.8vmax;
+  height:3.8vw;
 }
 #main-navigation > ul{
   list-style-type: none;
 }
 #main-navigation > ul > li{
     display: inline-block;
-    padding: 0vmax;
-    margin: 0vmax auto;
-    line-height: 3.8vmax;
+    padding: 0vw;
+    margin: 0vw auto;
+    line-height: 3.8vw;
+}
+#main-navigation > ul > li:first-child{
+    display: block;
+    float: left;
 }
 #main-navigation > ul > li > a{
     text-decoration:none;
     color: black;
-    padding:0.5vmax;
-    border-radius: 1vmax;
+    padding:0.5vw;
+    border-radius: 1vw;
     border-style: solid;
     border-color: lightgray;
-    border-width: 0.3vmax;
+    border-width: 0.3vw;
 }
 
 #loginbtb{
     background-color: white;
     border-style: solid;
-    border-radius: 1vmax;
-    padding: 0.5vmax;
+    border-radius: 1vw;
+    padding: 0.5vw;
     color: black;
     border-color: lightgray;
-    border-width: 0.3vmax;
+    border-width: 0.3vw;
 }
 
 #loginbtb:hover{
@@ -51,16 +55,16 @@
 }
 
 .login-input{
-    border-width: 0.3vmax;
+    border-width: 0.3vw;
     border-style: solid;
     border-color: lightgray;
-    border-radius: 0.6vmax;
-    padding: 0.5vmax;
+    border-radius: 0.6vw;
+    padding: 0.5vw;
     
 }
 
 .login-input::placeholder{
-    padding-left: 0.2vmax;
+    padding-left: 0.2vw;
 }
 #main-navigation > ul > li > a:hover{
     color:white;
@@ -68,21 +72,8 @@
     border-color: transparent;
 }
 #main-navigation > ul > li:last-child{
-    margin-right: 2vmax;
+    margin-right: 2vw;
 }
 #main-navigation  form  button{
-    margin-right:4vmax;
-}
-
-#book-shopping-title{
-    background-color: white;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    margin-top: 2vmax;
-    width: 40vmax;
-    padding: 2vmax;
-    border-radius: 1vmax;
-    color: deepskyblue;
-    font-size: 4vmax;
+    margin-right:4vw;
 }
