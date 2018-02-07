@@ -1,0 +1,19 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+#register-form-div{
+    text-align: center;
+}
+
+#register{
+    top: 30vw;
+    border-style: solid;
+    width: 40em;
+    border-color: white;
+    border-width: thin;
+}
+
+#register input{
+
+
+}
